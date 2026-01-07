@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Clean Madame LLC to book professional cleaning services. Call (845) 212-4444, text, or use our online booking form. SMS opt-in available for booking updates.">
+    <title>Contact Us - Clean Madame LLC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Clean <span>Madame</span></a>
+                <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 3rem 0;">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Book your cleaning service today - we're here to help</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2 style="margin-bottom: 0.5rem;">Get in Touch</h2>
+                    <p style="margin-bottom: 1.25rem;">Choose the contact method that works best for you. We offer three convenient ways to book your cleaning service.</p>
+
+                    <div class="contact-method">
+                        <div class="contact-method-icon">📞</div>
+                        <div class="contact-method-info">
+                            <h3>Phone</h3>
+                            <a href="tel:+18452124444">(845) 212-4444</a>
+                            <p>Automated IVR system available 24/7 for instant booking</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-method-icon">💬</div>
+                        <div class="contact-method-info">
+                            <h3>Text Message</h3>
+                            <a href="sms:+18452124444">(845) 212-4444</a>
+                            <p>Send us a text with your booking details anytime</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-method-icon">📧</div>
+                        <div class="contact-method-info">
+                            <h3>Email</h3>
+                            <a href="mailto:info@cleanmadame.com">info@cleanmadame.com</a>
+                            <p>Email us for general inquiries and support</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method" style="margin-bottom: 0;">
+                        <div class="contact-method-icon">📍</div>
+                        <div class="contact-method-info">
+                            <h3>Service Area</h3>
+                            <p style="font-weight: 600;">NYC Tri-State Area</p>
+                            <p style="margin: 0;">New York • New Jersey • Connecticut</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Form -->
+                <div class="form-container">
+                    <h2 style="margin-bottom: 0.5rem;">Online Booking Form</h2>
+                    <p style="margin-bottom: 1.25rem;">Fill out the form below and we'll match you with a cleaning provider.</p>
+
+                    <form id="bookingForm" action="#" method="post">
+                        <!-- Personal Information -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name <span class="required">*</span></label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name <span class="required">*</span></label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" placeholder="(201) 555-0123" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <!-- Service Details -->
+                        <div class="form-group">
+                            <label for="serviceType">Type of Service <span class="required">*</span></label>
+                            <select id="serviceType" name="serviceType" required>
+                                <option value="">Select a service...</option>
+                                <option value="standard">Standard Cleaning</option>
+                                <option value="deep">Deep Cleaning</option>
+                                <option value="recurring">Recurring Service</option>
+                                <option value="move">Move-In/Move-Out</option>
+                                <option value="other">Other (specify in notes)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="serviceDate">Preferred Date</label>
+                                <input type="date" id="serviceDate" name="serviceDate">
+                            </div>
+                            <div class="form-group">
+                                <label for="serviceTime">Preferred Time</label>
+                                <input type="time" id="serviceTime" name="serviceTime">
+                            </div>
+                        </div>
+
+                        <!-- Service Address -->
+                        <div class="form-group">
+                            <label for="streetAddress">Street Address <span class="required">*</span></label>
+                            <input type="text" id="streetAddress" name="streetAddress" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City <span class="required">*</span></label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State <span class="required">*</span></label>
+                                <select id="state" name="state" required>
+                                    <option value="">Select state...</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="CT">Connecticut</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="zipCode">ZIP Code <span class="required">*</span></label>
+                            <input type="text" id="zipCode" name="zipCode" pattern="[0-9]{5}" required>
+                        </div>
+
+                        <!-- Special Instructions -->
+                        <div class="form-group">
+                            <label for="specialInstructions">Special Instructions or Requests</label>
+                            <textarea id="specialInstructions" name="specialInstructions" rows="3" placeholder="Please specify areas to be cleaned, any hazards or special conditions, access instructions, etc."></textarea>
+                        </div>
+
+                        <!-- SMS Opt-In Section - CRITICAL FOR COMPLIANCE -->
+                        <div class="sms-optin">
+                            <h3 style="margin-bottom: 0.75rem; font-size: 1.0625rem;">SMS Notifications (Optional)</h3>
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox" id="smsOptIn" name="smsOptIn" value="yes">
+                                <label for="smsOptIn">
+                                    <strong>Yes, I want to receive text message notifications</strong>
+                                </label>
+                            </div>
+                            <div class="sms-disclosure">
+                                <p><strong>SMS Opt-In Disclosure:</strong></p>
+                                <p>By checking this box and submitting this form, you consent to receive booking confirmations, service notifications, and promotional text messages from Clean Madame LLC at the phone number provided above. Message frequency varies. Message and data rates may apply. You can unsubscribe at any time by replying <strong>STOP</strong>. Reply <strong>HELP</strong> for help. By opting in, you agree to our <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-and-conditions.html">Terms & Conditions</a>.</p>
+                                <p style="margin-top: 0.75rem; font-size: 0.8rem; margin-bottom: 0;"><em>Mobile information will not be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</em></p>
+                            </div>
+                        </div>
+
+                        <!-- Terms Agreement -->
+                        <div class="form-group">
+                            <div class="checkbox-wrapper" style="background-color: var(--bg-light); padding: 1rem; border-radius: 0.5rem;">
+                                <input type="checkbox" id="termsAgree" name="termsAgree" required>
+                                <label for="termsAgree">
+                                    I agree to the <a href="terms-and-conditions.html" target="_blank">Terms & Conditions</a> and <a href="privacy-policy.html" target="_blank">Privacy Policy</a> <span class="required">*</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Pricing Reminder -->
+                        <div class="alert alert-info">
+                            <strong>Pricing:</strong> $18/hour with a 3-hour minimum ($54 minimum booking). Payment is required at the time of booking confirmation. See our <a href="services.html">Services page</a> for more details.
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.0625rem; padding: 0.875rem;">
+                            Submit Booking Request
+                        </button>
+
+                        <p style="text-align: center; margin-top: 0.75rem; color: var(--text-light); font-size: 0.8125rem;">
+                            <span class="required">*</span> Required fields
+                        </p>
+                    </form>
+
+                    <!-- Success Message (Hidden by default) -->
+                    <div id="successMessage" style="display: none; margin-top: 2rem;">
+                        <div class="alert alert-success">
+                            <h3 style="margin-bottom: 0.5rem;">Thank You for Your Booking Request!</h3>
+                            <p style="margin-bottom: 0;">We've received your request and will contact you shortly to confirm your booking and match you with a cleaning provider. Please check your email and phone for confirmation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Information -->
+    <section style="background-color: var(--bg-light); padding: 3rem 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Important Booking Information</h2>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="alert alert-warning">
+                    <h3 style="margin-bottom: 0.75rem;">Cancellation Policy</h3>
+                    <p>We require at least 24 hours' notice for cancellations, suspensions, or postponements. A $25 cancellation fee applies to cancellations made within 24 hours of your scheduled booking.</p>
+                </div>
+                <div class="alert alert-info">
+                    <h3 style="margin-bottom: 0.75rem;">Access Requirements</h3>
+                    <p>Please ensure you can provide unencumbered access to your property at the scheduled time. Failure to provide access will result in automatic booking termination and a $25 administrative fee.</p>
+                </div>
+                <div class="alert alert-info" style="margin-bottom: 0;">
+                    <h3 style="margin-bottom: 0.75rem;">Booking Changes</h3>
+                    <p style="margin-bottom: 0;">All changes to bookings must be made through Clean Madame LLC. Cleaning providers are not authorized to accept booking changes directly. Please contact us via phone, text, or email to modify your booking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Clean Madame LLC</h3>
+                    <p>Professional cleaning services connecting customers with trusted cleaning providers across the NYC tri-state area.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>📞 <a href="tel:+18452124444">(845) 212-4444</a></p>
+                    <p>📧 <a href="mailto:info@cleanmadame.com">info@cleanmadame.com</a></p>
+                    <p>📍 Serving NYC Tri-State Area</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Clean Madame LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
